@@ -412,57 +412,65 @@
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">등록</h1>
                     </div>
-
-                    <!-- Dropdown -->
-                    <div class="enrollType">
-                        <span class="m-0 font-weight-bold text-primary" id="title">글 종류</span>
-                    </div>
-                    <select name="text_type" >
-                        <option value="notice">공지사항</option>
-                        <option value="q&a">Q&A</option>
-                        <option value="report">보도자료</option>
-                        <option value="press">언론보도</option>
-                        <option value="activity">활동안내</option>
-                        <option value="support">후원하기</option>
-                    </select>
-                    </br>
-                    <p></p>
-
-
-                    <!-- content -->
+                
+                    <!-- Illustrations -->
                     <div class="card shadow mb-4">
+                
                         <div class="card-header py-3">
-                            <div>
-
-                                <div class="enrollType">
-                                    <span class="m-0 font-weight-bold text-primary" id="title">제목</span>
-                                    <input type="text" name="Title" placeholder="제목을 입력하세요.">
-                                </div>
-
-                                <div class="enrollType">
-                                    <span class="m-0 font-weight-bold text-primary"> 파일 첨부</span>
-                                    <Button name="add_File">내PC
-                                    </Button>
-                                </div>
-
-                                <div class="enrollType">
-                                    <textarea class="Content" name="content" id="content"
-                                        placeholder="내용을 입력하세요."></textarea>
-                                </div>
-                            </div>
+                            <div class="m-0 font-weight-bold text-primary type">글 종류</div>
+                
+                            <select>
+                                <option value="notice">공지사항</option>
+                                <option value="q&a">Q&A</option>
+                                <option value="report">보도자료</option>
+                                <option value="press">언론보도</option>
+                                <option value="activity">활동안내</option>
+                                <option value="support">후원하기</option>
+                            </select>
+                
                         </div>
+                
+                        
+                
+                        <div class="card-body">
+                
+                        <div class="enrollType">
+                                                    <span class="m-0 font-weight-bold text-primary" id="title">제목</span>
+                                                    <input type="text" name="Title" placeholder="제목을 입력하세요.">
+                                                </div>
+
+                                                <!-- 파일 첨부 -->
+                                                <div class="enrollType">
+                                                    <span class="m-0 font-weight-bold text-primary"> 파일 첨부</span>
+                                                    <input type="file" name="file" id="FileOpenInput" multiple>                                                                                           
+                                                </div>
+
+                                                <!-- 이미지 파일 첨부 -->
+                                                <div>
+                                                    <form action="" method="post" enctype="multipart/form-data" name=""></form>
+                                                    <span class="m-0 font-weight-bold text-primary"> 이미지 첨부</span>                                                  
+                                                    <input type="file" name="file" id="imageFileOpenInput" accept="image/*" multiple>
+                                                    </form>
+                                                </div>
+
+                                                <!-- textarea -->
+                                                <div class="enrollType">
+                                                    <textarea class="Content" name="content" id="content"
+                                                        placeholder="내용을 입력하세요."></textarea>
+                                                </div>
+                
+                                                <!-- 업로드 버튼 -->
+                                                <a href="#" class="btn btn-primary btn-icon-split btn-sm">
+                                                    <span class="icon text-white-50">
+                                                      <i class="fas fa-flag"></i>
+                                                    </span>
+                                                    <span class ="text">등록</span>
+                                                  </a>
+                            
+                        </div>
+                
                     </div>
-
-
-                    <a href="#" class="btn btn-primary btn-icon-split btn-sm">
-                        <span class="icon text-white-50">
-                          <i class="fas fa-flag"></i>
-                        </span>
-                        <span class="text">등록</span>
-                      </a>
-
-                    <!-- /.container-fluid -->
-
+                
                 </div>
                 <!-- End of Main Content -->
 

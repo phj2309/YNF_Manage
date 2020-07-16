@@ -12,25 +12,42 @@
  */
 
 /* 글등록 페이지 */
- select {
-  width: 200px;
-  padding: .8em .5em;
-  border: 1px solid #999;
-  font-family: inherit;
-  border-radius: 0px;
-  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;  
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+.type{
+  display: inline;
+  padding-right : 10px;
 }
-select::-ms-expand {
-  display: none;
+
+select {
+  cursor: pointer;
+ outline: none;
+ border-radius: 0;
+ border: 0;
+  
+  width: 50%;
+  height: 35px;
+  
+  font-family: inherit;
+  
+  border-bottom: 1px solid #ccc;
+  padding : 0px 5px 5px 5px;
+
+  background-color: #f8f9fc;
+  
+ -webkit-border-radius: 0;
+}
+
+select::placeholder {
+  color: #ababab;
+}
+
+select:focus {
+  border-bottom: 2px solid #4e73df;
 }
 input {
  width: 70%;
  border : none;
  border-bottom: 1px solid #858796;
- margin-left: 10px;
+ margin-left: 10%;
 }
 textarea{
   width:80%;
