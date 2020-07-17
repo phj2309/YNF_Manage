@@ -19,41 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css" rel="stylesheet">
-
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th {
-            border-bottom: 1px solid #444444;
-            padding: 10px 5px;
-            color: #4e73df;
-            text-align: center;
-            
-        }
-
-        th[align='center'] {
-            width: 30px;
-        }
-
-        td {
-            text-align: center;
-            padding: 10px;
-        }
-
-        td[align='left'] {
-            padding: 10px 0px 5px 5px;
-            text-align: left;
-        }
-
-        td[align="center"] {
-            padding: 10px;
-            text-align: center;
-            width : 30px;
-        }
-    </style>
+    <link href="css/main.css" rel="stylesheet">
 
 </head>
 
@@ -169,8 +135,6 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">MANAGER</span>
-                                <img class="img-profile rounded-circle"
-                                    src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -199,8 +163,29 @@
                     <div class="card shadow mb-4">
 
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">메뉴 선택하는 곳</h6>
+                            <div class="m-0 font-weight-bold text-primary type">글 종류</div>
+
+                            <select>
+                                <option value="notice">공지사항</option>
+                                <option value="q&a">Q&A</option>
+                                <option value="report">보도자료</option>
+                                <option value="press">언론보도</option>
+                                <option value="activity">활동안내</option>
+                                <option value="support">후원하기</option>
+                            </select>
+
+                            <div class="editBtn">
+                            <a href="#" class="btn btn-primary btn-icon-split btn-sm">
+                                <span class="icon text-white-50">
+                                  <i class="fas fa-flag"></i>
+                                </span>
+                                <span class="text">편집</span>
+                              </a>
+                            </div>
+
                         </div>
+
+                        
 
                         <div class="card-body">
                             <table>
@@ -210,7 +195,6 @@
                                         <th style="text-align:left;">제목</th>
                                         <th>글쓴이</th>
                                         <th>날짜</th>
-                                        <th> </th>
                                     </tr>
                                 </thead>
                                 <tbody>
