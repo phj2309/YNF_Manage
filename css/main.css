@@ -1,9 +1,3 @@
-#menuButton{
-    position: absolute;
-    bottom : 30px;
-    left : 30px;
-  }
-
 .type{
     display: inline;
     padding-right : 10px;
@@ -15,7 +9,7 @@ select {
 	border-radius: 0;
 	border: 0;
     
-    width: 50%;
+    width: 35%;
     height: 35px;
     
     font-family: inherit;
