@@ -1,0 +1,70 @@
+.type{
+    display: inline;
+    padding-right : 10px;
+  }
+
+select {
+    cursor: pointer;
+	outline: none;
+	border-radius: 0;
+	border: 0;
+    
+    width: 35%;
+    height: 35px;
+    
+    font-family: inherit;
+    
+    border-bottom: 1px solid #ccc;
+    padding : 0px 5px 5px 5px;
+
+    background-color: #f8f9fc;
+    
+	-webkit-border-radius: 0;
+  }
+
+select::placeholder {
+    color: #ababab;
+}
+
+select:focus {
+    border-bottom: 2px solid #4e73df;
+}
+
+.editBtn{
+    display: inline;
+    padding-left : 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color:#000;
+}
+
+th {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 5px;
+    color: #4e73df;
+    text-align: center;
+    
+}
+
+th[align='center'] {
+    width: 30px;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+td[align='left'] {
+    padding: 10px 0px 5px 5px;
+    text-align: left;
+}
+
+td[align="center"] {
+    padding: 10px;
+    text-align: center;
+    width : 30px;
+}
